@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error":"#690005","surface-container-high":"#1b2b3f","background":"#031427","on-error-container":"#ffdad6","surface-container-lowest":"#000f21","surface-container-low":"#0b1c30","on-primary-container":"#fff6f5","on-tertiary-container":"#fff7f1","on-primary-fixed-variant":"#93000b","tertiary-fixed-dim":"#ffb95f","on-secondary":"#283044","secondary-fixed":"#dae2fd","on-secondary-fixed":"#131b2e","error-container":"#93000a","primary":"#ffb4ab","secondary":"#bec6e0","on-tertiary-fixed-variant":"#653e00","on-secondary-container":"#adb4ce","outline-variant":"#5c403c","inverse-on-surface":"#213145","inverse-surface":"#d3e4fe","on-primary-fixed":"#410002","tertiary-fixed":"#ffddb8","error":"#ffb4ab","primary-fixed":"#ffdad6","on-surface-variant":"#e6bdb8","surface-container":"#102034","on-tertiary-fixed":"#2a1700","on-primary":"#690005","surface-container-highest":"#26364a","surface":"#031427","on-tertiary":"#472a00","surface-bright":"#2a3a4f","tertiary-container":"#a06500","secondary-container":"#3f465c","surface-tint":"#ffb4ab","secondary-fixed-dim":"#bec6e0","outline":"#ac8884","tertiary":"#ffb95f","surface-dim":"#031427","inverse-primary":"#bf0715","on-secondary-fixed-variant":"#3f465c","surface-variant":"#26364a","on-surface":"#d3e4fe","primary-container":"#dc2626","primary-fixed-dim":"#ffb4ab","on-background":"#d3e4fe"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"2rem","margin-mobile":"1rem"},fontFamily:{"display-xl-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"label-md":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"700"}],"code-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="JECRC Events Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XflGDgnl-p-p6AaFYShBfR9yoV9GBsu0PMdNvGVtRnIR7EiBAys0LIxyPdytdN9Mqtu7K-PNRxVXU8KueIsKjmC9FR3-jdmhxq7GAF9wH3Y_0OExXTdQxAo0QRxzQGSrrBcNv3QhTCK-fNCn4yuaM3HMh04r8DrZ8IYaPaLQdZovLXKmu53IelVig-Fa7mxpYTH63rtagz7u_kzcCVimEvR99EnCbt8CIHGtlUhudZmbovzMw4bSRCXCey"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight tracking-tight">JECRC Events Hub</span><span class="font-label-sm text-label-sm text-secondary">Sitapura Campus</span></div></div><div class="relative hidden xl:block w-72"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-4 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search events, clubs, venues..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-title-md text-title-md rounded-lg"><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-events" href="#">Explore Events</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="event-details-register" href="#">Event Details & Register</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-passes-schedule" href="#">My Passes & Schedule</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organizer-studio" href="#">Organizer Studio</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span><span>JECRC Foundation / Sitapura</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div><div class="flex items-center gap-space-xs"><button aria-label="Saved Bookmarks" class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">bookmark</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDusRYu0hJiR5NeyVfnuNTO9tLG5bOCsY9ksnhPdLXiy1nUCCMqLvzZRuBUrsLAatJQEloYbiD5gLTMrYRb0zUCLHnmNPB45urOA19eksrSlVMLIiTImhmpWU_7XHQlE-E1euR-bh9vQGv75ljRDXD4JnKbgSPQ8ZW8wdZyphnlHDOuJyUssyGrJxzUPoDgj-H52ZKodVn53VityA6-uKwkT_dmAFyqWD2UVk2WSxU1qvgnWDDrrMHcVA"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">CS-AIML '25</span></div><span class="material-symbols-outlined hidden 2xl:block text-on-surface-variant text-[16px]">expand_more</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-gutter py-space-xl flex flex-col gap-space-xl">
+<!-- Top Identity & Sub-header Area -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm tracking-wider uppercase">JECRC Student Central</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">ROLL: 21EJCCS042</span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="text-secondary font-label-sm text-label-sm">B.Tech CS-AIML (Class of 2025)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">My Campus Event Hub</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Unified digital credentials, physical gate passes, and personalized activity timelines synced with the JECRC RTU credits portal.
+        </p>
+</div>
+<!-- Action Utilities -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync Timetable</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container hover:brightness-110 text-on-primary-container font-title-md text-title-md transition-all shadow-md hover:shadow-[0_4px_20px_rgba(220,38,38,0.35)]" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Scan Gate Token</span>
+</button>
+</div>
+</div>
+<!-- Top Quick Overview Metrics (Bento-style 3 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Bookings -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Upcoming Bookings</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-display-xl text-display-xl text-on-surface">3</span>
+<span class="font-title-md text-title-md text-primary font-semibold">Active Access Passes</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>All credentials verified for campus entry</span>
+</div>
+</div>
+<!-- Card 2: Activity Credits Bar -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-tertiary/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Campus Activity Credits</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">military_tech</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-display-xl text-on-surface">18</span>
+<span class="font-headline-sm text-headline-sm text-secondary">/ 20</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-bold">90% Done</span>
+</div>
+<!-- Progress Pill -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-gradient-to-r from-tertiary to-primary h-full rounded-full transition-all duration-500" style="width: 90%;"></div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>2 pts needed for degree clearance</span>
+<span class="text-tertiary font-code-sm text-code-sm">+2 pending Hack-JECRC</span>
+</div>
+</div>
+<!-- Card 3: Countdown Next Event -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Next Event In</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-display-xl text-primary font-black tracking-tight" id="countdown-timer">2d 06h</span>
+<span class="font-headline-sm text-headline-sm text-secondary tracking-normal">42m</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface truncate mt-1">Hack-JECRC 3.0 (Round 1 Opening)</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Campus Audi 2 • Reporting 08:30 AM</span>
+</div>
+</div>
+</div>
+<!-- Navigation Tab Strip -->
+<div class="flex items-center justify-between border-b-0 pb-1">
+<div class="flex items-center gap-space-xs overflow-x-auto w-full p-1 rounded-xl bg-surface-container-low max-w-max">
+<button class="tab-btn px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md shadow-sm transition-all" data-tab="passes" type="button">
+          Active Passes & Tickets (3)
+        </button>
+<button class="tab-btn px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-title-md transition-all" data-tab="timeline" type="button">
+          My Schedule & Calendar
+        </button>
+<button class="tab-btn px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-title-md transition-all" data-tab="past" type="button">
+          Past Events & Attendance (6)
+        </button>
+<button class="tab-btn px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-title-md transition-all" data-tab="certs" type="button">
+          Earned Certificates & Badges (4)
+        </button>
+</div>
+<div class="hidden xl:flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="text-on-surface">Auto-Synced with RFID Turnstiles</span>
+</div>
+</div>
+<!-- Mandatory Security Callout -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Campus Gate Security Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bring your physical JECRC College ID along with this digital QR code at Entry Gate 1 & Central Computing Complex.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-code-sm text-code-sm bg-surface-container px-3 py-1.5 rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span>Gates Open 07:45 AM</span>
+</div>
+</div>
+<!-- Split Grid Layout: Passes on Left (8 cols), Schedule & Drawer on Right (4 cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Left Column: Active Digital Passes (8 Columns) -->
+<div class="xl:col-span-8 flex flex-col gap-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Digital Gate Passes</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">3 Scannable</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Updated 10m ago</span>
+</div>
+<!-- TICKET 1: HERO PASS (Hack-JECRC 3.0) -->
+<div class="relative rounded-2xl bg-surface-container shadow-xl overflow-hidden group">
+<!-- Ambient Glow Flare -->
+<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row">
+<!-- Ticket Left Segment: Main Details -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                      TECHNICAL HACKATHON
+                    </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                      TEAM LEADER
+                    </span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-lowest px-2 py-1 rounded">PASS #JECRC-HACK-8841</span>
+</div>
+<!-- Event Name & Team -->
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                    Hack-JECRC 3.0: 36-Hour National Hackathon
+                  </h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">
+                    Team: <strong class="text-on-surface">ByteForge</strong> (4 Members Registered)
+                  </p>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md py-space-sm bg-surface-container-low/60 rounded-xl px-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Date & Span</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">Mar 28-30, 2025</span>
+<span class="font-code-sm text-code-sm text-secondary block">09:00 AM - 09:00 PM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Assigned Desk</span>
+<span class="font-title-md text-title-md text-tertiary font-medium">Lab 4 • Table 12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Block-B 2nd Floor</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Status</span>
+<span class="inline-flex items-center gap-1 font-title-md text-title-md text-emerald-400 font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Verified & Confirmed
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Hardware Kit Allocated</span>
+</div>
+</div>
+<!-- Ticket Action Row -->
+<div class="flex items-center gap-space-sm pt-space-xs flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container hover:bg-red-600 text-on-primary-container font-title-md text-title-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF Pass</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">wallet</span>
+<span>Add to Apple/Google Wallet</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors ml-auto" type="button">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Teammates (3)</span>
+</button>
+</div>
+</div>
+<!-- Perforation Divider -->
+<div class="relative flex flex-row lg:flex-col items-center justify-center">
+<!-- Notch Top -->
+<div class="hidden lg:block w-6 h-6 rounded-full bg-surface absolute -top-3"></div>
+<!-- Perforated Line -->
+<div class="w-full lg:w-0 h-0 lg:h-full border-t lg:border-t-0 lg:border-r-2 border-dashed border-surface-container-highest my-2 lg:my-0"></div>
+<!-- Notch Bottom -->
+<div class="hidden lg:block w-6 h-6 rounded-full bg-surface absolute -bottom-3"></div>
+</div>
+<!-- Ticket Right Segment: Scannable Stub -->
+<div class="w-full lg:w-64 bg-surface-container-low p-space-lg flex flex-col items-center justify-between text-center gap-space-md">
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Entry Clearance</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">GATE 1 - NORTH</span>
+</div>
+<!-- SVG Scannable QR Component -->
+<div class="p-3 bg-white rounded-xl shadow-inner flex flex-col items-center justify-center">
+<svg class="w-32 h-32 text-slate-900" fill="currentColor" viewbox="0 0 100 100">
+<!-- Simulated High-Precision QR Matrix -->
+<path d="M0,0 h30 v30 h-30 z M6,6 h18 v18 h-18 z M10,10 h10 v10 h-10 z"></path>
+<path d="M70,0 h30 v30 h-30 z M76,6 h18 v18 h-18 z M80,10 h10 v10 h-10 z"></path>
+<path d="M0,70 h30 v30 h-30 z M6,76 h18 v18 h-18 z M10,80 h10 v10 h-10 z"></path>
+<rect height="18" width="6" x="36" y="6"></rect>
+<rect height="6" width="16" x="48" y="10"></rect>
+<rect height="6" width="8" x="42" y="24"></rect>
+<rect height="6" width="18" x="6" y="36"></rect>
+<rect height="16" width="6" x="18" y="48"></rect>
+<rect height="28" width="28" x="36" y="36"></rect>
+<rect fill="#fff" height="16" width="16" x="42" y="42"></rect>
+<rect fill="#dc2626" height="8" width="8" x="46" y="46"></rect>
+<rect height="12" width="8" x="70" y="36"></rect>
+<rect height="6" width="12" x="84" y="42"></rect>
+<rect height="6" width="24" x="70" y="54"></rect>
+<rect height="24" width="8" x="36" y="70"></rect>
+<rect height="6" width="18" x="48" y="76"></rect>
+<rect height="8" width="14" x="52" y="88"></rect>
+<rect height="10" width="10" x="72" y="72"></rect>
+<rect height="18" width="8" x="86" y="76"></rect>
+</svg>
+</div>
+<!-- Barcode & Identification String -->
+<div class="flex flex-col items-center gap-space-xs w-full">
+<!-- Barcode Graphics SVG -->
+<svg class="w-full h-7 text-secondary" fill="currentColor" viewbox="0 0 160 28">
+<rect height="28" width="3" x="0" y="0"></rect>
+<rect height="28" width="2" x="5" y="0"></rect>
+<rect height="28" width="4" x="10" y="0"></rect>
+<rect height="28" width="1" x="17" y="0"></rect>
+<rect height="28" width="5" x="21" y="0"></rect>
+<rect height="28" width="2" x="29" y="0"></rect>
+<rect height="28" width="3" x="34" y="0"></rect>
+<rect height="28" width="6" x="40" y="0"></rect>
+<rect height="28" width="2" x="49" y="0"></rect>
+<rect height="28" width="1" x="54" y="0"></rect>
+<rect height="28" width="5" x="58" y="0"></rect>
+<rect height="28" width="3" x="66" y="0"></rect>
+<rect height="28" width="2" x="72" y="0"></rect>
+<rect height="28" width="6" x="77" y="0"></rect>
+<rect height="28" width="3" x="86" y="0"></rect>
+<rect height="28" width="2" x="92" y="0"></rect>
+<rect height="28" width="5" x="97" y="0"></rect>
+<rect height="28" width="1" x="105" y="0"></rect>
+<rect height="28" width="4" x="109" y="0"></rect>
+<rect height="28" width="2" x="116" y="0"></rect>
+<rect height="28" width="6" x="121" y="0"></rect>
+<rect height="28" width="3" x="130" y="0"></rect>
+<rect height="28" width="2" x="136" y="0"></rect>
+<rect height="28" width="5" x="141" y="0"></rect>
+<rect height="28" width="2" x="149" y="0"></rect>
+<rect height="28" width="4" x="154" y="0"></rect>
+</svg>
+<span class="font-code-sm text-code-sm text-secondary">SECURE TOKEN: 9482-ADF0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to brighten display</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TICKET 2: CULTURAL PASS (Renaissance 2025) -->
+<div class="relative rounded-2xl bg-surface-container shadow-md overflow-hidden group">
+<div class="flex flex-col lg:flex-row">
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-rose-500/15 text-rose-400 font-label-sm text-label-sm">
+                      CAMPUS CULTURAL FEST
+                    </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                      VIP WRISTBAND ACCESS
+                    </span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-lowest px-2 py-1 rounded">PASS #REN-25-PASS-0912</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                    Renaissance 2025: All-Access 4-Day Cultural Fest Band
+                  </h3>
+<p class="font-body-md text-body-md text-secondary">
+                    Access to Celebrity Pronite, Battle of Bands, Choreonite, & Fashion Vista.
+                  </p>
+</div>
+</div>
+<!-- Details Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md py-space-sm bg-surface-container-low/60 rounded-xl px-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Fest Dates</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">Apr 10-13, 2025</span>
+<span class="font-code-sm text-code-sm text-secondary block">Gates 04:30 PM Onwards</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Venue Ground</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">Main Campus Lawns</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">JECRC Central Stage</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Requirement</span>
+<span class="inline-flex items-center gap-1 font-title-md text-title-md text-amber-400 font-semibold">
+<span class="material-symbols-outlined text-[16px]">id_card</span> Valid ID Card Required
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Wristband pickup Apr 9</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Pass</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface font-title-md text-title-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>Entry Guidelines</span>
+</button>
+</div>
+</div>
+<!-- Ticket Cutout Perforation -->
+<div class="relative flex flex-row lg:flex-col items-center justify-center">
+<div class="hidden lg:block w-6 h-6 rounded-full bg-surface absolute -top-3"></div>
+<div class="w-full lg:w-0 h-0 lg:h-full border-t lg:border-t-0 lg:border-r-2 border-dashed border-surface-container-highest my-2 lg:my-0"></div>
+<div class="hidden lg:block w-6 h-6 rounded-full bg-surface absolute -bottom-3"></div>
+</div>
+<!-- Stub Side -->
+<div class="w-full lg:w-64 bg-surface-container-low p-space-lg flex flex-col items-center justify-between text-center gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Main Enclosure</span>
+<!-- QR Code Mock -->
+<div class="p-3 bg-white rounded-xl shadow-inner">
+<svg class="w-24 h-24 text-slate-900" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0,0 h30 v30 h-30 z M6,6 h18 v18 h-18 z M10,10 h10 v10 h-10 z"></path>
+<path d="M70,0 h30 v30 h-30 z M76,6 h18 v18 h-18 z M80,10 h10 v10 h-10 z"></path>
+<path d="M0,70 h30 v30 h-30 z M6,76 h18 v18 h-18 z M10,80 h10 v10 h-10 z"></path>
+<rect height="12" width="10" x="36" y="6"></rect>
+<rect height="8" width="12" x="52" y="14"></rect>
+<rect height="8" width="16" x="6" y="38"></rect>
+<rect fill="#e11d48" height="24" width="24" x="38" y="38"></rect>
+<rect height="18" width="12" x="70" y="36"></rect>
+<rect height="16" width="12" x="36" y="72"></rect>
+<rect height="18" width="18" x="72" y="72"></rect>
+</svg>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-code-sm text-code-sm text-secondary">RFID-CHIP #7719-B</span>
+<span class="font-label-sm text-label-sm text-emerald-400">Wristband Status: Ready</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TICKET 3: WORKSHOP PASS (Masterclass GenAI on AWS) -->
+<div class="rounded-2xl bg-surface-container p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-cyan-950/40 text-cyan-400 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">cloud_sync</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 font-label-sm text-label-sm">WORKSHOP / CERTIFICATION</span>
+<span class="font-code-sm text-code-sm text-secondary">#AWS-JECRC-449</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Masterclass: GenAI on AWS Cloud & Bedrock</h3>
+<div class="flex items-center gap-space-md flex-wrap text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span> Apr 05, 2025</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span> 10:00 AM - 01:30 PM</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span> CS Seminar Hall (Block C)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 font-title-md text-title-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done_all</span> Confirmed
+            </span>
+<button class="p-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" title="Download pass ticket" type="button">
+<span class="material-symbols-outlined text-[20px]">qr_code</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Schedule & Drawer Preview (4 Columns) -->
+<div class="xl:col-span-4 flex flex-col gap-space-xl">
+<!-- Interactive Day-by-Day Calendar Strip Box -->
+<div class="rounded-2xl bg-surface-container p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<h3 class="font-title-md text-title-md text-on-surface">March & April 2025</h3>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="p-1 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Date Picker Strips -->
+<div class="grid grid-cols-5 gap-space-xs text-center">
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="font-label-sm text-label-sm text-secondary">THU</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-1"></span>
+</div>
+<!-- Active Date: Hackathon Day 1 -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-primary-container text-on-primary-container shadow-md cursor-pointer transition-transform transform scale-105">
+<span class="font-label-sm text-label-sm font-bold opacity-90">FRI</span>
+<span class="font-headline-sm text-headline-sm font-extrabold">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-white mt-1"></span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="font-label-sm text-label-sm text-secondary">SAT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-1"></span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="font-label-sm text-label-sm text-secondary">SUN</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">30</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-1"></span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container-high cursor-pointer transition-colors">
+<span class="font-label-sm text-label-sm text-secondary">MON</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">31</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-1"></span>
+</div>
+</div>
+<!-- Time-blocked Timeline List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Friday, Mar 28 Agenda</span>
+<!-- Slot 1 -->
+<div class="relative pl-6 pb-space-sm flex flex-col before:absolute before:left-2 before:top-2 before:bottom-0 before:w-0.5 before:bg-surface-container-highest">
+<span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-primary-container ring-4 ring-surface-container"></span>
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary font-bold">08:30 AM - 09:30 AM</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">Gate 1</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mt-1">Team Registration & Kit Collection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Check-in at Desk 4 for NFC tags & IoT sensor package.</p>
+</div>
+<!-- Slot 2 -->
+<div class="relative pl-6 pb-space-sm flex flex-col before:absolute before:left-2 before:top-2 before:bottom-0 before:w-0.5 before:bg-surface-container-highest">
+<span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-tertiary ring-4 ring-surface-container"></span>
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-tertiary font-bold">10:00 AM - 11:30 AM</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">Audi 2</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mt-1">Keynote & Problem Statements</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unveiling of Smart Cities & Defense AI tracks by industry mentors.</p>
+</div>
+<!-- Slot 3 -->
+<div class="relative pl-6 flex flex-col">
+<span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-secondary ring-4 ring-surface-container"></span>
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-secondary font-bold">12:00 PM</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">Lab 4</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mt-1">Hacking Commences (Round 1)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">36-hour sprint starts. Mentors arrive at Table 12 at 03:00 PM.</p>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface font-title-md text-title-md transition-colors text-center" type="button">
+            View Complete 3-Day Schedule
+          </button>
+</div>
+<!-- Certificates & Achievements Drawer Preview -->
+<div class="rounded-2xl bg-surface-container p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[22px]">workspace_premium</span>
+<h3 class="font-title-md text-title-md text-on-surface">Verified Credentials</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">View All (4)</a>
+</div>
+<!-- Certificate Item 1 (SIH Internal Winner) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wider uppercase">National Level Hackathon</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Winner • Smart India Internal Hackathon 2024</h4>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Issue Date: Nov 14, 2024 • Credential ID: SIH-JECRC-8812</p>
+<div class="pt-space-xs">
+<button class="flex items-center gap-space-xs text-primary hover:text-red-400 font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Download Verified Certificate (PDF)</span>
+</button>
+</div>
+</div>
+<!-- Certificate Item 2 (RoboSoccer) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Technical Fest Track</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">RoboSoccer Championship 2024</h4>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">award_star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Participation Certificate • Issued by Robotics Club JECRC</p>
+<div class="pt-space-xs">
+<button class="flex items-center gap-space-xs text-secondary hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>View Digital Badge</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple tab switching interactions
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.className = 'tab-btn px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-title-md transition-all';
+      });
+      btn.className = 'tab-btn px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md shadow-sm transition-all';
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.04)] py-space-lg"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-md text-label-md text-primary">JECRC University Portal</span><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><span class="text-on-surface-variant text-body-sm font-body-sm">Campus Helpline: +91 141 2770232</span><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><a class="text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm transition-colors" href="#">Student Council</a><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><a class="text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm transition-colors" href="#">Hostel & Transport Hub</a></div><div class="flex items-center gap-space-md"><a class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-colors" data-path="organizer-studio" href="#">Host an Event</a><span class="text-on-surface-variant text-body-sm font-body-sm">© 2025 JECRC Events Hub.</span></div></div></footer></body></html>
