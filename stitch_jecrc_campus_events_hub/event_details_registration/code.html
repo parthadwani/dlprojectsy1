@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error":"#690005","surface-container-high":"#1b2b3f","background":"#031427","on-error-container":"#ffdad6","surface-container-lowest":"#000f21","surface-container-low":"#0b1c30","on-primary-container":"#fff6f5","on-tertiary-container":"#fff7f1","on-primary-fixed-variant":"#93000b","tertiary-fixed-dim":"#ffb95f","on-secondary":"#283044","secondary-fixed":"#dae2fd","on-secondary-fixed":"#131b2e","error-container":"#93000a","primary":"#ffb4ab","secondary":"#bec6e0","on-tertiary-fixed-variant":"#653e00","on-secondary-container":"#adb4ce","outline-variant":"#5c403c","inverse-on-surface":"#213145","inverse-surface":"#d3e4fe","on-primary-fixed":"#410002","tertiary-fixed":"#ffddb8","error":"#ffb4ab","primary-fixed":"#ffdad6","on-surface-variant":"#e6bdb8","surface-container":"#102034","on-tertiary-fixed":"#2a1700","on-primary":"#690005","surface-container-highest":"#26364a","surface":"#031427","on-tertiary":"#472a00","surface-bright":"#2a3a4f","tertiary-container":"#a06500","secondary-container":"#3f465c","surface-tint":"#ffb4ab","secondary-fixed-dim":"#bec6e0","outline":"#ac8884","tertiary":"#ffb95f","surface-dim":"#031427","inverse-primary":"#bf0715","on-secondary-fixed-variant":"#3f465c","surface-variant":"#26364a","on-surface":"#d3e4fe","primary-container":"#dc2626","primary-fixed-dim":"#ffb4ab","on-background":"#d3e4fe"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"2rem","margin-mobile":"1rem"},fontFamily:{"display-xl-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"label-md":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"700"}],"code-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="JECRC Events Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XflGDgnl-p-p6AaFYShBfR9yoV9GBsu0PMdNvGVtRnIR7EiBAys0LIxyPdytdN9Mqtu7K-PNRxVXU8KueIsKjmC9FR3-jdmhxq7GAF9wH3Y_0OExXTdQxAo0QRxzQGSrrBcNv3QhTCK-fNCn4yuaM3HMh04r8DrZ8IYaPaLQdZovLXKmu53IelVig-Fa7mxpYTH63rtagz7u_kzcCVimEvR99EnCbt8CIHGtlUhudZmbovzMw4bSRCXCey"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight tracking-tight">JECRC Events Hub</span><span class="font-label-sm text-label-sm text-secondary">Sitapura Campus</span></div></div><div class="relative hidden xl:block w-72"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-4 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search events, clubs, venues..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-title-md text-title-md rounded-lg"><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-events" href="#">Explore Events</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="event-details-register" href="#">Event Details & Register</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-passes-schedule" href="#">My Passes & Schedule</a><a class="px-space-md py-2 rounded-lg font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="organizer-studio" href="#">Organizer Studio</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span><span>JECRC Foundation / Sitapura</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div><div class="flex items-center gap-space-xs"><button aria-label="Saved Bookmarks" class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">bookmark</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDusRYu0hJiR5NeyVfnuNTO9tLG5bOCsY9ksnhPdLXiy1nUCCMqLvzZRuBUrsLAatJQEloYbiD5gLTMrYRb0zUCLHnmNPB45urOA19eksrSlVMLIiTImhmpWU_7XHQlE-E1euR-bh9vQGv75ljRDXD4JnKbgSPQ8ZW8wdZyphnlHDOuJyUssyGrJxzUPoDgj-H52ZKodVn53VityA6-uKwkT_dmAFyqWD2UVk2WSxU1qvgnWDDrrMHcVA"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">CS-AIML '25</span></div><span class="material-symbols-outlined hidden 2xl:block text-on-surface-variant text-[16px]">expand_more</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Decorative Ambient Backdrops -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[600px] h-[350px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-10 w-[450px] h-[400px] bg-secondary-container/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<div class="max-w-[1440px] mx-auto px-gutter py-space-lg w-full">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-secondary mb-space-md">
+<a class="font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Technical & Hackathons</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Hack-JECRC 3.0</span>
+</nav>
+<!-- Grid Shell (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT MAIN COLUMN (65% -> col-span-8) -->
+<section class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Event Header Banner Section -->
+<div class="flex flex-col gap-space-md">
+<!-- Badge Badges Flow -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                National Level
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-sm font-label-sm">
+                Team (2-4 Members)
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-sm font-label-sm">
+                Hybrid / On-Campus
+              </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary text-label-sm font-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-tertiary">emoji_events</span>
+                Cash Prizes ₹1.5L
+              </span>
+</div>
+<!-- Title & Organizer Hierarchy -->
+<div class="space-y-space-xs">
+<h1 class="font-display-xl text-display-xl text-on-surface tracking-tight leading-[1.08]">
+                Hack-JECRC 3.0: 36-Hour National Hackathon
+              </h1>
+<p class="font-body-lg text-body-lg text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                Organized by ACM Student Chapter & Dept. of Computer Science & Engineering
+              </p>
+</div>
+<!-- Key Info Bar (Architectural Bento Slab) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-start gap-space-sm p-space-xs">
+<div class="p-2.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Date</span>
+<span class="font-title-md text-title-md text-on-surface">March 28-30, 2025</span>
+<span class="font-body-sm text-body-sm text-secondary">36-Hours Continuous</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-xs">
+<div class="p-2.5 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Reporting Time</span>
+<span class="font-title-md text-title-md text-on-surface">Starts 09:00 AM IST</span>
+<span class="font-body-sm text-body-sm text-secondary">Opening Ceremony 10:30 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-xs">
+<div class="p-2.5 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Venue</span>
+<span class="font-title-md text-title-md text-on-surface">Central Computing Complex</span>
+<span class="font-body-sm text-body-sm text-secondary">Audi-2, Block-A, JECRC Campus</span>
+</div>
+</div>
+</div>
+<!-- Visual Showcase Media Strip -->
+<div class="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-lg mt-space-xs">
+<img class="w-full h-full object-cover brightness-95" data-alt="Vibrant tech hackathon auditorium full of enthusiastic university engineering students working with glowing laptop monitors, mechanical keyboards, digital projections of Hack-JECRC banner in dark navy and crimson lighting, modern architectural auditorium, crisp high-end atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHBZeN9_eMYyo4o1e3VSUE8Hp5XFz18K1CgqVdFpjZyWCkXJN4M6odYAfBY199hrUdWHdKLnNuEcJwI_MhmzgxoE4DxoiM16_vRUwxO3UPHN1aqVeHQYzH9qvygnsGTR8lnA2bM73EDklYA3-9nZMvPPAkLX3RAqjcNjevF9i9Cl7ZkQfJlMIB1uwxHYrWjLL6Pk-p1_nCA4x-XnhvkJxLBhaEvGTukiHP40K0rOf9msXOmCe2SU-l2w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<!-- Floating Overlaid Live Stat -->
+<div class="absolute bottom-4 left-4 right-4 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 bg-surface-container-lowest/80 backdrop-blur-md px-4 py-2 rounded-lg">
+<div class="flex -space-x-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm font-bold">42</div>
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold">18</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">+</div>
+</div>
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block leading-tight">600+ Hackers Selected</span>
+<span class="font-code-sm text-code-sm text-secondary">110 Universities Across India</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 backdrop-blur-md px-3.5 py-2 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold tracking-wide uppercase">AICTE & ACM Certified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Comprehensive Dynamic Tabs Section -->
+<div class="flex flex-col gap-space-lg">
+<!-- Tab Headers -->
+<div class="flex items-center gap-2 p-1.5 rounded-xl bg-surface-container-low overflow-x-auto" id="eventTabNav">
+<button class="tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all bg-primary-container text-on-primary-container shadow-sm flex items-center gap-2" id="btn-tab-overview" onclick="switchEventTab('overview')" type="button">
+<span class="material-symbols-outlined text-[18px]">widgets</span>
+                Overview & Tracks
+              </button>
+<button class="tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all text-secondary hover:text-on-surface hover:bg-surface-container flex items-center gap-2" id="btn-tab-timeline" onclick="switchEventTab('timeline')" type="button">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+                36-Hour Schedule
+              </button>
+<button class="tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all text-secondary hover:text-on-surface hover:bg-surface-container flex items-center gap-2" id="btn-tab-mentors" onclick="switchEventTab('mentors')" type="button">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+                Judges & Mentors
+              </button>
+<button class="tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all text-secondary hover:text-on-surface hover:bg-surface-container flex items-center gap-2" id="btn-tab-rules" onclick="switchEventTab('rules')" type="button">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+                Rules & Guidelines
+              </button>
+<button class="tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all text-secondary hover:text-on-surface hover:bg-surface-container flex items-center gap-2" id="btn-tab-faqs" onclick="switchEventTab('faqs')" type="button">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+                FAQs
+              </button>
+</div>
+<!-- Tab 1: Overview & Tracks -->
+<div class="flex flex-col gap-space-lg" id="tab-content-overview">
+<!-- About Description -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">info</span>
+                  About The Hackathon
+                </div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                  Hack-JECRC 3.0 represents Rajasthan’s premier student-led innovation cauldron. Over an intense 36-hour continuous sprint inside our flagship Central Computing Complex, university developers, designers, and innovators synthesize scalable prototypes solving high-stakes institutional, societal, and technological friction points. Participants gain 24x7 hardware access, high-speed fiber uplinks, peer collaboration lounges, and uninhibited advisory sessions with lead engineers from industry frontrunners.
+                </p>
+</div>
+<!-- Problem Tracks Bento Grid -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Core Problem Tracks</h3>
+<span class="font-label-sm text-label-sm text-secondary">Choose 1 track during registration</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Track 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">medical_services</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">AI & ML in Healthcare</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                        Deploy multimodal diagnostics, clinical edge models, rural telemetry devices, and predictive triaging algorithms for overburdened healthcare clusters.
+                      </p>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">PyTorch</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">FHIR API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Edge AI</span>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">currency_exchange</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Fintech & Web3 Infrastructure</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                        Build zero-knowledge identity protocols, frictionless cross-border micropayments, algorithmic compliance filters, or next-gen DeFi security engines.
+                      </p>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Solidity</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">zk-SNARKs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Rust</span>
+</div>
+</div>
+<!-- Track 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">router</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Smart Campus & Urban IoT</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                        Sensor-driven energy grid balancing, automated hostel security biometrics, smart wastewater reclamation, and intelligent shuttle telemetry.
+                      </p>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">MQTT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">ESP32</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">TimescaleDB</span>
+</div>
+</div>
+<!-- Track 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Open Innovation & Social Impact</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                        Unconstrained wild card track for moonshot ideas spanning climate resilience, assistive technologies, vernacular education, and cybersecurity.
+                      </p>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Fullstack</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Mobile</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary text-code-sm font-code-sm">Hardware</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Participant Perks & Deliverables -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Included Hacker Privileges</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-1 items-center text-center p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[28px]">restaurant</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">6 Catered Meals</span>
+<span class="font-body-sm text-body-sm text-secondary">Midnight energy bars & tea</span>
+</div>
+<div class="flex flex-col gap-1 items-center text-center p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[28px]">apparel</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">Official Swag Box</span>
+<span class="font-body-sm text-body-sm text-secondary">Cotton tee, stickers, badge</span>
+</div>
+<div class="flex flex-col gap-1 items-center text-center p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[28px]">cloud</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">$2,500 Cloud Credits</span>
+<span class="font-body-sm text-body-sm text-secondary">AWS & GitHub sponsor pack</span>
+</div>
+<div class="flex flex-col gap-1 items-center text-center p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[28px]">badge</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">Fast-Track Hiring</span>
+<span class="font-body-sm text-body-sm text-secondary">Direct interviews for Top 10</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 2: 36-Hour Timeline & Schedule (Default Hidden) -->
+<div class="hidden flex-col gap-space-lg" id="tab-content-timeline">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">36-Hour Chronological Sprint</h3>
+<span class="px-2.5 py-1 rounded bg-primary-container/20 text-primary font-code-sm text-code-sm">All Times IST</span>
+</div>
+<!-- Structured Vertical Timeline -->
+<div class="relative pl-6 space-y-6 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Phase 1 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary font-semibold">DAY 1 • 09:00 AM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Hacker Check-in & Hardware Kit Distribution</h4>
+<p class="font-body-sm text-body-sm text-secondary">ID verification at Block-A Lobby, badging, desk assignment, and Wi-Fi credential provisioning.</p>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-secondary font-semibold">DAY 1 • 10:30 AM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Opening Keynote & Track Problem Statement Releases</h4>
+<p class="font-body-sm text-body-sm text-secondary">Address by JECRC Leadership, ACM heads, and keynote speaker from Google Cloud India in Audi-2.</p>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary-fixed-dim font-semibold">DAY 1 • 11:30 AM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Hacking Clock Officially Initiated</h4>
+<p class="font-body-sm text-body-sm text-secondary">36-hour countdown starts across all 8 computing lab clusters. Git repositories initialized.</p>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-secondary font-semibold">DAY 1 • 05:00 PM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Mentorship Round 1: Architecture Review</h4>
+<p class="font-body-sm text-body-sm text-secondary">Technical mentors conduct desk check-ins to critique system architecture, APIs, and scope feasibility.</p>
+</div>
+</div>
+<!-- Phase 5 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-tertiary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">DAY 2 • 12:00 AM (MIDNIGHT)</span>
+<h4 class="font-title-md text-title-md text-on-surface">Midnight Pizza & Mini Gaming Chillout</h4>
+<p class="font-body-sm text-body-sm text-secondary">Red Bull energy bar distribution, high-voltage eSports mini-round, and midnight music lounge.</p>
+</div>
+</div>
+<!-- Phase 6 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary font-semibold">DAY 2 • 08:00 PM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Final Code Freeze & Repository Submission</h4>
+<p class="font-body-sm text-body-sm text-secondary">All commit histories lock on GitHub Classroom. README and video walkthroughs submitted.</p>
+</div>
+</div>
+<!-- Phase 7 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-tertiary ring-4 ring-surface-container-low"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">DAY 3 • 10:00 AM</span>
+<h4 class="font-title-md text-title-md text-on-surface">Stage Pitches, Demo Expo & Award Ceremony</h4>
+<p class="font-body-sm text-body-sm text-secondary">Top 12 qualifying teams pitch before the enterprise jury. ₹1.5L prize purse distributed.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 3: Mentors & Judges (Default Hidden) -->
+<div class="hidden flex-col gap-space-lg" id="tab-content-mentors">
+<div class="flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Distinguished Alumni & Tech Mentors</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Judge 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center text-center gap-space-sm">
+<img class="w-24 h-24 rounded-full object-cover shadow-md" data-alt="Close up professional headshot of a confident Indian male tech lead wearing smart casual clothing, friendly smile, clean dark studio backdrop, soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFr6WosDOTWOH4eoS9iYTtbIMpxUeoM7T72iKeQYRdTIggw1b-v61QkMBuFoIvTcS5kf3nfjXmBaDbTEfmbpWq2ffLLJ1-PK-iFMLbzc_SaKei98j9CQ-ZiAE87TfnyKQkkDq_B8QgB-aH-j3OrLmuxi7v7S9UzUUylxtnk664IlWbiYGhwZtBwG3gmKqGCxf0zqixQ5ooH-OlucLI-URCjnYD2h-A78z8DT60sd95GvdR68cmEMAnA"/>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Rohan Aggarwal</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Staff Software Engineer • Google</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">JECRC Alum '16 • Distributed Systems & Kubernetes</span>
+</div>
+<div class="flex gap-2 mt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">Cloud</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">Scale</span>
+</div>
+</div>
+<!-- Judge 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center text-center gap-space-sm">
+<img class="w-24 h-24 rounded-full object-cover shadow-md" data-alt="Professional corporate headshot of a poised Indian female tech leader in smart navy blazer, bright expressive eyes, blurred modern office background with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3kVn53RGgBx6JEJX-6dlwaoww7FR_1yUaKP_VH_I2Geiq9cwrGR8d_Vw8owzw_h3kwNMf6sz_tQ5Lcqq6v8bUN-3gGRiFx76IZbAVlYWzl__-h32QuWkU86D9-I2JE-lctssoeK1Mfe2t0dgoZUvAMUGgvw0bwPiN-JJGhlrwJoA3EJzxFgGi1KaM4u-s06if47W9P_P2TSftUAvoo8IKsje8qwfpVzXsXC6ko95KE8qBilVeAr3-yw"/>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Dr. Megha Singhal</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Principal Research Lead • Microsoft</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">JECRC Alum '14 • Generative AI & LLM Safety</span>
+</div>
+<div class="flex gap-2 mt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">GenAI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">MLOps</span>
+</div>
+</div>
+<!-- Judge 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center text-center gap-space-sm">
+<img class="w-24 h-24 rounded-full object-cover shadow-md" data-alt="Creative headshot of a young Indian male tech co-founder with spectacles and minimalist dark t-shirt in warm ambient indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQx2qcBJfNqTuDefdUp9sCt4bytyNI7LGhiI4hNqh3sA4FMk-Y-_ZqKD6ng7yY26bnGeau185CeLW0iSKW2B_szcz4zutoH5KtD-uBbbVgkbD_TJ3C7N6puOu_fvBkqQ-iyTLh0xzWtO7p5gkVnRwzLNjbxRdR5Vz5MX0E1BIJP3K6zpMhwlT-M-87pzRw-xtOQmbiGmoZL-j5OAx3lcha7yOnBwguVQ3S_NQfgajexRa7qVrAYLkNgQ"/>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Kartik Verma</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">VP of Engineering • Zomato</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">JECRC Alum '17 • Realtime Geofencing & Logistics</span>
+</div>
+<div class="flex gap-2 mt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">Fintech</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-code-sm font-code-sm">Backend</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 4: Rules & Guidelines (Default Hidden) -->
+<div class="hidden flex-col gap-space-lg" id="tab-content-rules">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Official Hackathon Rules & Integrity Code</h3>
+<ul class="space-y-space-sm font-body-md text-body-md text-secondary">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">Fresh Code Mandate:</strong> All lines of application source code must be written within the designated 36-hour sprint. Open-source libraries and APIs are permitted provided they are documented.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">Team Composition:</strong> Teams must strictly maintain 2 to 4 registered members. Cross-college and interdisciplinary collaborations are fully permissible.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">Physical Presence:</strong> At least 2 team members must report on-campus to Audi-2 for the final live judging evaluation round.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">Zero Tolerance Plagiarism:</strong> Automated GitHub classroom commit timeline audits will be executed before final shortlist announcements.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Tab 5: FAQs (Default Hidden) -->
+<div class="hidden flex-col gap-space-md" id="tab-content-faqs">
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2">
+<h4 class="font-title-md text-title-md text-on-surface">Is lodging and food provided for outside participants?</h4>
+<p class="font-body-md text-body-md text-secondary">Yes. All non-local shortlisted teams will receive hostel accommodation inside the JECRC campus along with all 6 meals, refreshments, and midnight snacks at no extra cost.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2">
+<h4 class="font-title-md text-title-md text-on-surface">Can we change our team members or problem track later?</h4>
+<p class="font-body-md text-body-md text-secondary">You can edit your roster and selected track up to 24 hours prior to the event start via the Organizer Studio portal.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2">
+<h4 class="font-title-md text-title-md text-on-surface">What hardware components are provided by JECRC?</h4>
+<p class="font-body-md text-body-md text-secondary">Teams registered for the IoT & Hardware track can request ESP32 modules, sensor kits, breadboards, and soldering stations at the equipment counter.</p>
+</div>
+</div>
+</div>
+<!-- Quick Campus Direction & Map Widget -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row gap-space-md items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="p-3 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[28px]">explore</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Campus Navigation & Overnight Entry</h4>
+<p class="font-body-sm text-body-sm text-secondary">Gate 2 & Gate 3 will remain open 24x7 for verified hackathon participants with valid digital passes.</p>
+</div>
+</div>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors flex items-center gap-1.5" href="#">
+<span>View Campus Map</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</section>
+<!-- RIGHT COLUMN: Interactive Registration Module (35% -> col-span-4) -->
+<aside class="lg:col-span-4 w-full sticky top-24 flex flex-col gap-space-md">
+<!-- Registration Module Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col gap-space-md">
+<!-- Registration Header Bar -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wide">Status: Open</span>
+</div>
+<span class="font-code-sm text-code-sm px-2.5 py-0.5 rounded-full bg-error-container/40 text-error font-semibold">
+                Ends in 4 Days
+              </span>
+</div>
+<!-- Fee Callout Slab -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase block">Registration Fee</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">₹0</span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">JECRC Pass</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">External Teams</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">₹299 <span class="text-body-sm font-normal text-secondary">/ team</span></span>
+</div>
+</div>
+<!-- Form Container -->
+<form class="flex flex-col gap-space-sm" id="hackathonRegistrationForm" onsubmit="handleRegistration(event)">
+<!-- Team Name Input -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Team Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[18px]">group_work</span>
+<input class="w-full pl-9 pr-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g. ByteForce X" required="" type="text"/>
+</div>
+</div>
+<!-- Team Leader Name -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Team Leader Full Name</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g. Aarav Sharma" required="" type="text"/>
+</div>
+<!-- Roll Number & College Email Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Roll / Student ID</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-code-sm text-code-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="21EJCCS042" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Branch & Year</label>
+<select class="w-full px-2.5 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>CS-AIML • 3rd Yr</option>
+<option>CSE • 4th Yr</option>
+<option>IT • 3rd Yr</option>
+<option>ECE • 2nd Yr</option>
+<option>Other Department</option>
+</select>
+</div>
+</div>
+<!-- College Official Email -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">College Email (@jecrc.ac.in)</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="aarav.21bcs042@jecrc.ac.in" required="" type="email"/>
+</div>
+<!-- Team Member Count Selector -->
+<div class="mt-space-xs">
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1.5">Team Size (Including Leader)</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="size-btn py-1.5 rounded-lg text-title-md font-title-md bg-surface text-secondary hover:bg-surface-container-high transition-colors" id="team-btn-2" onclick="updateMemberCount(2)" type="button">
+                    2 Members
+                  </button>
+<button class="size-btn py-1.5 rounded-lg text-title-md font-title-md bg-primary-container text-on-primary-container transition-colors shadow-sm" id="team-btn-3" onclick="updateMemberCount(3)" type="button">
+                    3 Members
+                  </button>
+<button class="size-btn py-1.5 rounded-lg text-title-md font-title-md bg-surface text-secondary hover:bg-surface-container-high transition-colors" id="team-btn-4" onclick="updateMemberCount(4)" type="button">
+                    4 Members
+                  </button>
+</div>
+</div>
+<!-- Dynamic Teammate Fields Container -->
+<div class="space-y-space-xs pt-1" id="dynamicTeammates">
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Teammate 2 Email</label>
+<input class="w-full px-3 py-1.5 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="member2@jecrc.ac.in" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Teammate 3 Email</label>
+<input class="w-full px-3 py-1.5 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="member3@jecrc.ac.in" required="" type="email"/>
+</div>
+</div>
+<!-- Problem Track Dropdown -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Selected Track</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>AI & ML in Healthcare</option>
+<option>Fintech & Web3 Infrastructure</option>
+<option>Smart Campus & Urban IoT</option>
+<option>Open Innovation & Social Impact</option>
+</select>
+</div>
+<!-- GitHub / Portfolio Link -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">GitHub / Project Repository</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-code-sm text-code-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="https://github.com/your-team-or-handle" type="url"/>
+</div>
+<!-- Code of Conduct Checkbox -->
+<div class="flex items-start gap-2 pt-1">
+<input class="mt-1 rounded bg-surface text-primary-container focus:ring-primary-container cursor-pointer" id="conductCheck" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-secondary leading-snug cursor-pointer" for="conductCheck">
+                  I agree to the Hackathon Code of Conduct, Academic Integrity rules, and campus overnight safety policies.
+                </label>
+</div>
+<!-- Submit CTA -->
+<button class="w-full mt-space-xs py-3 rounded-lg bg-primary-container hover:opacity-90 text-on-primary-container font-title-md text-title-md font-bold tracking-tight shadow-lg transition-transform active:scale-[0.99] flex items-center justify-center gap-2" type="submit">
+<span>Submit Team Registration</span>
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-secondary">
+                Entry passes and desk allocation QR will be sent via college email.
+              </p>
+</form>
+<!-- Success Confirmation Modal Stub (Hidden by default) -->
+<div class="hidden p-space-md rounded-lg bg-surface-container-high text-on-surface flex flex-col gap-2" id="regSuccessMessage">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md">
+<span class="material-symbols-outlined">check_circle</span>
+                Registration Confirmed!
+              </div>
+<p class="font-body-sm text-body-sm text-secondary">Team Pass #HJ3-4028 generated. Check your college inbox for the digital entry pass & discord keys.</p>
+</div>
+</div>
+<!-- Contact Organizers & Community Widget -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface">Need Help or Teammates?</h4>
+<div class="space-y-space-xs">
+<a class="flex items-center justify-between p-2 rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">forum</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Join Hack-JECRC Discord</span>
+<span class="font-body-sm text-body-sm text-secondary">Find teammates & ask queries</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-2 rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">groups</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">WhatsApp Announcement Community</span>
+<span class="font-body-sm text-body-sm text-secondary">Instant schedule & food updates</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform text-[18px]">chevron_right</span>
+</a>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span>Student Convenor: <strong>Divyansh Pareek</strong> (+91 98290 XXXXX)</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<!-- Inline Script for Tab Navigation and Dynamic Member Count Form Logic -->
+<script>
+    function switchEventTab(tabName) {
+      const tabs = ['overview', 'timeline', 'mentors', 'rules', 'faqs'];
+      tabs.forEach(t => {
+        const contentEl = document.getElementById('tab-content-' + t);
+        const btnEl = document.getElementById('btn-tab-' + t);
+        if (t === tabName) {
+          contentEl.classList.remove('hidden');
+          contentEl.classList.add('flex');
+          btnEl.className = 'tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all bg-primary-container text-on-primary-container shadow-sm flex items-center gap-2';
+        } else {
+          contentEl.classList.remove('flex');
+          contentEl.classList.add('hidden');
+          btnEl.className = 'tab-btn px-space-md py-2.5 rounded-lg font-title-md text-title-md transition-all text-secondary hover:text-on-surface hover:bg-surface-container flex items-center gap-2';
+        }
+      });
+    }
+
+    function updateMemberCount(count) {
+      [2, 3, 4].forEach(n => {
+        const btn = document.getElementById('team-btn-' + n);
+        if (n === count) {
+          btn.className = 'size-btn py-1.5 rounded-lg text-title-md font-title-md bg-primary-container text-on-primary-container transition-colors shadow-sm';
+        } else {
+          btn.className = 'size-btn py-1.5 rounded-lg text-title-md font-title-md bg-surface text-secondary hover:bg-surface-container-high transition-colors';
+        }
+      });
+
+      const container = document.getElementById('dynamicTeammates');
+      let html = '';
+      for (let i = 2; i <= count; i++) {
+        html += `
+          <div>
+            <label class="block font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Teammate ${i} Email</label>
+            <input type="email" required placeholder="member${i}@jecrc.ac.in" class="w-full px-3 py-1.5 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-secondary/50 focus:outline-none focus:ring-1 focus:ring-primary-container">
+          </div>
+        `;
+      }
+      container.innerHTML = html;
+    }
+
+    function handleRegistration(e) {
+      e.preventDefault();
+      const form = document.getElementById('hackathonRegistrationForm');
+      const msg = document.getElementById('regSuccessMessage');
+      form.classList.add('hidden');
+      msg.classList.remove('hidden');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.04)] py-space-lg"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-md text-label-md text-primary">JECRC University Portal</span><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><span class="text-on-surface-variant text-body-sm font-body-sm">Campus Helpline: +91 141 2770232</span><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><a class="text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm transition-colors" href="#">Student Council</a><span class="text-on-surface-variant text-body-sm font-body-sm">•</span><a class="text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm transition-colors" href="#">Hostel & Transport Hub</a></div><div class="flex items-center gap-space-md"><a class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-colors" data-path="organizer-studio" href="#">Host an Event</a><span class="text-on-surface-variant text-body-sm font-body-sm">© 2025 JECRC Events Hub.</span></div></div></footer></body></html>
